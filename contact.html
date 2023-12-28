@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        .cont{
+            background-image: url(pic2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        .link {
+            color: rgb(0, 0, 0);
+            font-size: 50px;
+            margin-left: 10%;
+        }
+
+        .contact ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .links {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            margin-left: 20%;
+            margin-top: 5%;
+            color: blue;
+            width: 38%;
+            font-size: 25px;
+            font-weight: 900;
+        }
+
+        .links img {
+            width: 60px;
+            height: 60px;
+            border: none;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="link">
+            <h3>links : </h3>
+        </div>
+        <div class="contact">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/_raj_rohinish_/" class="links" target="_blank">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51FFY8JKggL._AC_UF894,1000_QL80_.jpg"
+                            alt="instagram">
+                        Instagram: @_raj_rohinish_
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/rohinish-raj-734551297/?originalSubdomain=in" class="links" target="_blank">
+                        <img src="data:image/png;base64,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"
+                            alt="linkdein">
+                        Linkedin: @_raj_rohinish_
+                    </a>
+                </li>
+
+                <li>
+                    <a href="mailto:rohinishraj124@gmail.com" class="links" target="_blank">
+                        <img src="https://static.vecteezy.com/system/resources/previews/021/514/902/original/google-gmail-symbol-logo-black-design-illustration-free-vector.jpg"
+                            alt="Gmail">
+                        Gmail: @_raj_rohinish_
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/+LgzMQnPxwFkzNzU1" class="links" target="_blank">
+                        <img src="https://cdn.icon-icons.com/icons2/2428/PNG/512/telegram_black_logo_icon_147073.png"
+                            alt="Telegram">
+                        Telegram: @_raj_rohinish_
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/RajRohinish1204" class="links" target="_blank">
+                        <img src="https://www.svgrepo.com/show/47722/twitter-black-shape.svg" alt="Twitter">
+                        Twitter: @_raj_rohinish_
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=61551645638137" class="links" target="_blank">
+                        <img src="https://i.pinimg.com/564x/ca/3b/f0/ca3bf05cfab74677e5b73b130bd30991.jpg"
+                            alt="facebook">
+                        facebook: @_raj_rohinish_
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

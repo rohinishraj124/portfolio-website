@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Rohinish's portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+        body {
+            text-align: right;
+            margin: 0;
+            font-family: 'Inconsolata', monospace;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .top img {
+            height: 70px;
+            width: auto;
+            max-width: 100%; /* Ensure image responsiveness */
+        }
+
+        .top ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .top ul li {
+            margin: 0 10px;
+            text-decoration: none; /* Remove default underline */
+            line-height: 1; /* Adjust line height */
+        }
+
+        .top ul li a {
+            text-decoration: none; /* Remove default underline */
+        }
+
+        .name {
+            height: 100vh;
+            background: url(https://images.template.net/wp-content/uploads/2016/06/09114134/Blue-Backgrounds.jpg) center center no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: right;
+            align-items: right;
+        }
+
+        .intro {
+            margin-right: 5%;
+            font-weight: 900;
+            font-family: 'Inconsolata', monospace;
+        }
+
+        #first {
+            font-size: 80px;
+            margin-top: 450px;
+            opacity: 0;
+        }
+
+        #second {
+            font-size: 80px;
+            text-align: right;
+            margin-top: auto;
+            margin-right: 150px;
+            opacity: 0;
+        }
+
+        .top ul li a {
+            font-size: 200%;
+            margin-right: 60px;
+            font-weight: 900;
+        }
+
+        .top ul li:last-child {
+            margin-right: 0;
+        }
+
+        /* Keyframes for side movement */
+        @keyframes slideInFromRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Apply the animation to your text */
+        #first,
+        #second {
+            animation: slideInFromRight 2s ease-out forwards;
+            animation-iteration-count: infinite;
+        }
+
+        /* Additional styles to position the text initially */
+        #first {
+            transform: translateX(100%);
+        }
+
+        #second {
+            transform: translateX(-100%);
+        }
+        #first {
+            font-size: 6vw;
+            margin-top: 20vw;
+            opacity: 0;
+        }
+
+        #second {
+            font-size: 6vw;
+            margin-top: 5vw;
+            margin-right: 10vw;
+            opacity: 0;}
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 768px) {
+            body {
+                text-align: center;
+            }
+
+            .top {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .top ul {
+                margin-top: 10px;
+            }
+
+            .name {
+                text-align: center;
+            }
+
+            #first,
+            #second {
+                font-size: 4vw; /* Example: 4% of viewport width */
+                margin-top: 2vw; /* Example: 2% of viewport width */
+            }
+
+            .top ul li a {
+                font-size: 2vw; /* Example: 2% of viewport width */
+                margin: 1vw 0; /* Example: 1% of viewport width */
+            }
+
+            .top img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <img src="https://portfoliocollection.com/wp-content/uploads/2022/03/Untitled_design_35_-removebg-preview.png" alt="portfolio">
+        <ul>
+            <li><a href="index.html">INTRO</a></li>
+            <li><a href="skill.html">SKILLS</a></li>
+            <li><a href="background.html">BACKGROUND</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="name">
+        <div class="intro">
+            <ul style="list-style-type:none;">
+                <li>
+                    <h1 id="first">I am Rohinish Raj ,</h1>
+                </li>
+                <li>
+                    <h1 id="second">A programmer</h1>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
